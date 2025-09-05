@@ -21,6 +21,10 @@ export class AppComponent {
     this.newFriend = null;
   }
 
+  removeAsFavourite(fav: string) {
+    this.favs = this.favs.filter((f) => f !== fav);
+  }
+
   setAsFavourite(person: string) {
     this.favorite = person;
   }

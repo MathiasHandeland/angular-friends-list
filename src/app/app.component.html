@@ -9,7 +9,7 @@
 <div class="favourites">
   <h3>My Favourite People:</h3>
   <ul>
-    <li *ngFor="let fav of favs">{{ fav }}</li>
+    <li *ngFor="let fav of favs">{{ fav }}<button class="button-remove" (click)="removeAsFavourite(fav)">Remove as Favourite</button></li>
   </ul>
 </div>
 <div class="people">
